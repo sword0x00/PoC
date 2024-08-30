@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counter++;
-                homeText.setText(String.format("Clicked and the number is queal= %d",counter));
+                homeText.setText(String.format("Clicked and the number= %d",counter));
                 if (counter==10){
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://x.com"));
                     startActivity(browserIntent);
